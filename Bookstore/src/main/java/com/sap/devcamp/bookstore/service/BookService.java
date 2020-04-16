@@ -23,4 +23,9 @@ public class BookService {
 	public List<TestEntity> getAll() {
 		return testRepository.findAll();
 	}
+
+	public List<TestEntity> updateBook(TestEntity book) {
+		testRepository.save(book);
+		return testRepository.findAll();
+	}
 }
