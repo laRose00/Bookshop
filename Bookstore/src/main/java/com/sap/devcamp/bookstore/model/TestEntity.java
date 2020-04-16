@@ -15,7 +15,7 @@ public class TestEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "PK")
-	private int key;
+	private int PK;
 	
 	@Column(name = "Value")
 	private String value;
